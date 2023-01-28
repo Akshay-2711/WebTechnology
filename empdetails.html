@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+       table{
+
+           margin-top:50px;
+           
+           border: 2px solid grey;
+           border-collapse: collapse;
+           
+       }
+       td{
+           border: 2px solid grey;
+           padding: 8px;
+           
+       }
+       
+      .myclass{
+          width: 50px;
+      }
+   </style>
+</head>
+<body>
+    <table align="center">
+        <form>
+            <tr>
+                <td>1)</td>
+                <td><label for="empid">Employee Id:</label></td>
+                <td><input type="text" name="empid" id="empid" ></td>
+            </tr>
+            <tr>
+                <td>2)</td>
+                <td><label for="nm">Employee Name:</label></td>
+                <td><input type="text" name="nm" id="nm"></td>
+            </tr>
+            <tr>
+                <td>3)</td>
+                <td><label for="nm">Department Name:</label></td>
+                <td>
+                    <select name="dept" id="dept">
+                        <option value="S/W">S/W</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>4)</td>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" name="gen" id="male" value"Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="gen" id="female" value"Female">
+                    <label for="Female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>5)</td>
+                <td><label for="addr">Address:</label></td>
+                <td>
+                    <textarea style="resize: none;"  rows="4 " cols="20 " name="addr" id="addr" ></textarea>
+
+                </td>
+            </tr>
+            <tr>
+                <td>6)</td>
+                <td><label>Skill Topic:</label></td>
+                <td>
+                   <input type="checkbox" name="skill" id="C" value="C">
+                   <label for="C">C</label>
+                   <input type="checkbox" name="skill" id="C++" value="C++">
+                   <label for="C++">C++</label>
+                   <input type="checkbox" name="skill" id="JAVA" value="JAVA">
+                   <label for="JAVA">JAVA</label>
+                   <input type="checkbox" name="skill" id=".NET" value="C">
+                   <label for=".NET">.NET</label>
+
+                </td>
+            </tr>
+            <tr>
+                
+                <td>7)</td>
+                <td><label for="nm">Email:</label></td>
+                <td ><input type="text" name="mail" id="mail" ></td>
+            </tr>
+            <tr id="myid">
+                <td>8)</td>
+                <td><label>Birth Date:</label></td>
+                <td class="myclass"><input type="text" name="day" id="day" >
+                <label for="day">(DD)/</label>
+                <input type="text" name="mnt" id="mnt" >
+                <label>(MM)/</label><br/>
+                <input type="text" name="yyyy" id="yyyy" >
+                <label>(YYYY)</label></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
